@@ -1,0 +1,70 @@
+<html>
+<!doctype html>
+<head>
+<title>Kiffer</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1><a href="index.html">Kiffer</a></h1>
+
+<input type="button" value="day" onclick="
+var target=document.querySelector('body');
+if(this.value==='day'){
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value='night';
+    
+    var alist=document.querySelectorAll('a');
+    for(var i=0;i<alist.length;i++){
+        alist[i].style.textDecorationLine='underline';
+    }
+}else{
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value='day';
+    
+    var alist=document.querySelectorAll('a');
+    for(var i=0;i<alist.length;i++){
+        alist[i].style.textDecorationLine='none';
+    }
+}">
+
+<div id="grid">
+    <ul class="firstul">
+        <li><a href="coffee.html">C0ff33</a></li>
+        <li><a href="dessert.html">dess3rt</a></li>
+    </ul>
+        
+    <div>
+        <h2>dess3rt</h2>
+        <img src="dessert.jpg" width="100%">
+        <ul>
+            <li class="secondul">Scone</li>
+            <ul>
+                <li>Butter Scone</li>
+                <li>Rasberry Scone</li>
+                <li>Chocolate Scone</li>
+                <li>Orange Scone</li>
+                <li>Kaya Scone</li>
+            </ul>
+            <li class="secondul">Cake</li>
+            <ul>
+                <li>Victoria Cake</li>
+                <li>Tiramisu</li>
+                <li>Chocolate Cake</li>
+                <li>Bask Cheese Cake</li>
+            </ul>
+            <li class="secondul">Pie</li>
+            <ul>
+                <li>Meat Pie</li>
+                <li>Cinamon Pie</li>
+            </ul>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<!doctype html>
+<head>
+<title>Kiffer</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1><a href="index.html">Kiffer</a></h1>
+
+<input type="button" value="day" onclick="
+var target=document.querySelector('body');
+if(this.value==='day'){
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value='night';
+    
+    var alist=document.querySelectorAll('a');
+    for(var i=0;i<alist.length;i++){
+        alist[i].style.textDecorationLine='underline';
+    }
+}else{
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value='day';
+    
+    var alist=document.querySelectorAll('a');
+    for(var i=0;i<alist.length;i++){
+        alist[i].style.textDecorationLine='none';
+    }
+}">
+
+<div id="grid">
+    <ul class="firstul">
+        <li><a href="coffee.html">C0ff33</a></li>
+        <li><a href="dessert.html">dess3rt</a></li>
+    </ul>
+    
+    <div>
+        <h2><span style="color:palevioletred">Je te </span><span style="color:darkgreen"> Kiffe </span> ! </h2>
+        <img src="out_kiffer.jpg" width="100%">
+    </div>
+</div>
+</body>
+</html>
